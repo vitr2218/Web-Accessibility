@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"                crossorigin="anonymous">
+<link rel="stylesheet" href="phone.css">
+<title> Vivian Tran </title> 
+</head>
+<body>
+	<div class = "tabs" id ="tab_bar"> 
+		<button type = "button" class="btn btn-dark" id = "b1" accesskey="D" > Dialer </button> 
+		<button type = "button" class="btn btn-dark" id = "b2" accesskey="C"> Contact List </button>
+		<button type = "button" class="btn btn-dark" id = "b3" accesskey="A"> Add Contact </button>
+		<button type = "button" class="btn btn-dark" id = "b4" accesskey="H"> Help </button>
+	</div> 
+	<div class = "content" id = "contents">
+		<div class = "tab_elements" id = "dialer" role="main" aria-live="polite">
+			<form>
+				 <input class="form-control" id="dialer_ex" aria- style="width: 120px;">
+			</form>
+			<div id = "dial_pad">
+                <button class="btn btn-secondary btn btn-space" id="1" accesskey="1" >1</button>
+                <button class="btn btn-secondary btn btn-space" id="2" accesskey="2" >2</button>
+                <button class="btn btn-secondary btn btn-space" id="3" accesskey="3" >3</button>
+                <br>
+                <button class="btn btn-secondary btn btn-space" id="4" accesskey="4">4</button>
+                <button class="btn btn-secondary btn btn-space"id="5" accesskey="5">5</button>
+                <button class="btn btn-secondary btn btn-space"id="6" accesskey="6">6</button>
+                <br>
+                <button  class="btn btn-secondary btn btn-space"id="7" accesskey="7">7</button>
+                <button  class="btn btn-secondary btn btn-space"id="8" accesskey="8">8</button>
+                <button  class="btn btn-secondary btn btn-space"id="9" accesskey="9">9</button>
+                <br>
+                <button  class="btn btn-secondary btn btn-space"id="*" accesskey="*">*</button>
+                <button  class="btn btn-secondary btn btn-space"id="0" accesskey="0">0</button>
+                <button  class="btn btn-secondary btn btn-space"id="#" accesskey="#">#</button>
+                <br>
+                <button class="btn btn-dark btn btn-space" id="dial" accesskey="-">Dial</button>
+                <button class="btn btn-dark btn btn-space" id="clear" accesskey="=" >Clear</button>
+			</div>
+		</div>
+		<div class = "tab_elements" id = "list">
+                <table class="table table-dark">
+				  <tr>
+				  	<th>Photo</th>
+				    <th>Contact</th>
+				    <th>Phone Number</th>
+				    <th>Email</th>
+				  </tr>
+				  <tr>
+				  	<td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Dwight_Schrute.jpg/220px-Dwight_Schrute.jpg" alt="Photo of Tinky Winky" width="100" height="140"></td>
+				    <td>Dwight Schrute</td>
+				    <td>000-000-0000</td>
+				    <td>dwight.schrute@gmail.com</td>
+				  </tr>
+				  <tr>
+				  	<td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Pam_Beesley.jpg/220px-Pam_Beesley.jpg" alt="Photo of Dipsy" width="100" height="140"></td>
+				    <td>Jim Halpert</td>
+				    <td>000-000-0001</td>
+				    <td>jim.halpert@gmail.com</td>
+				  </tr>
+				  <tr>
+				  	<td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7e/Jim-halpert.jpg/220px-Jim-halpert.jpg" alt="Photo of Laa-Laa" width="100" height="140"></td>
+				    <td>Pam Halpert</td>
+				    <td>000-000-0002</td>
+				    <td>pam.halpert@gmail.com</td>
+				  </tr>
+				  <tr>
+				  	<td><img src="https://upload.wikimedia.org/wikipedia/en/d/dc/MichaelScott.png" alt="Photo of Po" width="100" height="140"></td>
+				    <td>Michael Scott</td>
+				    <td>000-000-8008</td>
+				    <td>michael.scott@ymail.com</td>
+				  </tr>
+				</table>
+		 </div>
+		<div class = "tab_elements" id = "add"> 
+			<div class="form-group">
+				<label for="name_input"><b>Name</b></label> <br>
+				 <input type="name" class="form-control" id="name_input" aria-   describedby="nameHelp" placeholder="Enter name" style="width: 300px;">
+			</div>
+			<div class="form-group">
+				<label for="phone_input"><b>Phone Number</b></label> <br>
+				 <input type="phone" class="form-control" id="phone_input" aria-   describedby="phoneHelp" placeholder="Enter phone number" style="width: 300px;">
+			</div>
+			<div class="form-group">
+				<label for="email_input"><b>Email</b></label> <br>
+				 <input type="email" class="form-control" id="email_input" aria-   describedby="emailHelp" placeholder="Enter email" style="width: 300px;">
+			</div>
+			<button class="btn btn-dark btn btn-space" id="add_contact" accesskey="+">Add Contact</button>
+            <button class="btn btn-dark btn btn-space" id="clear" accesskey="=">Clear</button>
+		
+		
+		
+		</div> 
+	</div>
+	
+		<div class="tab_elements" id="help">
+            	<p class= "text-primary">
+				Accessibility Features including tabbing for navigation and use of keyboard shortcuts.
+            	<br>
+            	<br>
+            	For Mac Users on Chrome, Firefox, or Safari: use Control+Alt+AccessKey
+            	<br>
+            	For Windows Users on Chrome and Safari: use Alt+AccessKey
+            	<br>
+            	For Windows Users on Firefox: use Alt+Shift+AccessKey
+            	<br>
+            	<br>
+				</p>
+            	Table of Keyboard Shortcuts
+                <table>
+				  <tr>
+				    <th>Button</th>
+				    <th>Keyboard Shortcut</th>
+				  </tr>
+				  <tr>
+				    <td>Dialer Tab</td>
+				    <td>d</td>
+				  </tr>
+				  <tr>
+				    <td>Contact List Tab</td>
+				    <td>c</td>
+				  </tr>
+				  <tr>
+				    <td>Add Contact Tab</td>
+				    <td>a</td>
+				  </tr>
+				  <tr>
+				    <td>Add Contact</td>
+				    <td> + </td>
+				  </tr>
+				  <tr>
+				    <td>Help Tab</td>
+				    <td>h</td>
+				  </tr>
+				  <tr>
+				    <td>Dial Pad</td>
+				    <td>shortcut is number/symbol</td>
+				  </tr>
+				  <tr>
+				    <td>Dial</td>
+				    <td> - </td>
+				  </tr>
+				  <tr>
+				    <td>Clear</td>
+				    <td> = </td>
+				  </tr>
+
+				</table>
+
+				<br>
+			</div>
+	<br>
+        <br>
+        <br>
+        Assignment 2: Web Accessibility
+        <br>
+        Vivian Tran
+        <br>
+        Links to Files:
+        <br>
+         <a href="https://github.com/vitr2218/vitr2218.github.io/blob/master/index.html">index.html</a> 
+        <br>
+        <a href="https://github.com/vitr2218/vitr2218.github.io/blob/master/phone.css">phone.css</a> 
+        <br>
+        <a href="https://github.com/vitr2218/vitr2218.github.io/blob/master/phone.js">phone.js</a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="phone.js"></script>
+</body>
+</html>
